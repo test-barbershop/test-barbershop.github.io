@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Barbershop Borodinski</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Описание">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Стили -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style.min.css">
+</head>
+
+<body>
+    <!--Шапка сайта-->
+    <header class="header header_view">
+        <div class="top top_view ">
+            <!--Для меню под мобильные устройства-->
+            <a href="#" id="minmenu" class="minmenu text">Меню</a>
+            <!--Меню-->
+            <ul class="menu top__menu">
+                <li class="menu__item"><a class="menu__item-a" href="index.html">Главная</a></li>
+                <li class="menu__item"><a class="menu__item-a" href="#">Информация</a></li>
+                <li class="menu__item"><a class="menu__item-a" href="#">Новости</a></li>
+                <li class="menu__item"><a class="menu__item-a" href="price.html">Прайс-лист</a></li>
+                <li class="menu__item"><a class="menu__item-a menu__item-a_active" href="#">Магазин</a></li>
+                <li class="menu__item"><a class="menu__item-a" href="#">Контакты</a></li>
+            </ul>
+            <!--Поле входа-->
+            <ul class="log-in log-in_view">
+                <li class="log-in__img"><img class="log-in__img_view" src="images/log-in.png" alt="Вход"></li>
+                <li class="log-in__item"><a class="log-in__item-a" href="#">Вход</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--Основной блок страницы с ценами для магазина-->
+    <section class="section-price">
+        <div class="wrapper">
+            <h1 class="title section-price__title">Barbershop borodinski — прайс-лист</h1>
+            <!--Навигация-->
+            <ul class="breadcrumbs section-price__nav">
+                <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__item_a breadcrumbs__item_a-first text">Главная</a></li>
+                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__item_a text">Магазин</a></li>
+                <li class="breadcrumbs__item">
+                    <p class="breadcrumbs__item_a text">Средства для ухода</p</li>
+            </ul>
+            <!--Основной блок магазина-->
+            <div class="section-shop__block">
+                <!--Форма для фильтра товаров магазина-->
+                <div class="section-shop__form shop-form">
+                    <form action="/echo" method="post" class="shop-form__form">
+                        <div class="shop-form__left">
+                            <h2 class="title shop-form__title-top">Производители</h2>
+                            <input type="checkbox" id="shop-form__baxter-item" class="shop-form__checkbox" checked>
+                            <label for="shop-form__baxter-item" class="text shop-form__item">Baxter of california</label>
+                            <br>
+                            <input type="checkbox" name="mr_natty" id="shop-form__natty-item" class="shop-form__checkbox">
+                            <label for="shop-form__natty-item" class="text shop-form__item">mr natty</label>
+                            <br>
+                            <input type="checkbox" name="suavecito" id="shop-form__suavecito-item" checked class="shop-form__checkbox">
+                            <label for="shop-form__suavecito-item" class="text shop-form__item">suavecito</label>
+                            <br>
+                            <input type="checkbox" name="malin+goetz" id="shop-form__malin-item" class="shop-form__checkbox">
+                            <label for="shop-form__malin-item" class="text shop-form__item">malin+goetz</label>
+                            <br>
+                            <input type="checkbox" name="murray's" id="shop-form__marrays-item" class="shop-form__checkbox">
+                            <label for="shop-form__marrays-item" class="text shop-form__item">murray's'</label>
+                            <br>
+                            <input type="checkbox" name="american crew" id="shop-form__crew-item" checked class="shop-form__checkbox">
+                            <label for="shop-form__crew-item" class="text shop-form__item">american crew</label>
+                            <br>
+                        </div>
+                        <div class="shop-form__right">
+                            <h2 class="shop-form__title-bottom title">Группы товаров:</h2>
+                            <input type="radio" name="group-items" id="shop-form__oils-item" class="shop-form__radio">
+                            <label for="shop-form__oils-item" class="shop-form__input-group">Бритвенные принадлежности</label>
+                            <br>
+                            <input type="radio" name="group-items" value="" id="shop-form__care-item" class="shop-form__radio" checked>
+                            <label for="shop-form__care-item" class="shop-form__input-group">Средства для ухода</label>
+                            <br>
+                            <input type="radio" name="group-items" value="" id="shop-form__accessories-item" class="shop-form__radio">
+                            <label for="shop-form__accessories-item" class="shop-form__input-group">Аксессуары</label>
+                            <br>
+                        </div>
+                    </form>
+                </div>
+                <!--Продаваемая продукция-->
+                <div class="section-shop__products">
+                    <div class="section-shop__product-card product">
+                        <!--Блок продукта product-->
+                        <div class="product__img product_light-grey">
+                            <img src="images/product_1.png" alt="Набор для путешествий" class="product__img_view img"></div>
+                        <p class="text product__text">Набор для путешествий Baxter of California</p>
+                        <a href="" class="btn product__btn">2 900 РУБ.</a>
+                    </div>
+                    <div class="section-shop__product-card product">
+                        <div class="product__img  product_light-grey">
+                            <img src="images/product_2.png" alt="Увлажняющий кондиционер" class="product__img_view img"></div>
+                        <p class="text product__text">Увлажняющий кондиционер Baxter of California</p>
+                        <a href="" class="btn product__btn">750 РУБ.</a>
+                    </div>
+                    <div class="section-shop__product-card product">
+                        <div class="product__img">
+                            <img src="images/product_3.png" alt="Гель для волос" class="product__img_view img"></div>
+                        <p class="text product__text">Гель для волос Sauvecito</p>
+                        <a href="" class="btn product__btn">290 РУБ.</a>
+                    </div>
+                    <div class="section-shop__product-card product">
+                        <div class="product__img">
+                            <img src="images/product_4.png" alt="Глина для укладки волос" class="product__img_view img"></div>
+                        <p class="text product__text">Глина для укладки волос american crew</p>
+                        <a href="" class="btn product__btn">500 РУБ.</a>
+                    </div>
+                    <div class="section-shop__product-card product">
+                        <div class="product__img product_grey">
+                            <img src="images/product_5.png" alt="Гель для бритья" class="product__img_view img"></div>
+                        <p class="text product__text">Гель для бритья american crew</p>
+                        <a href="" class="btn product__btn">300 РУБ.</a>
+                    </div>
+                    <div class="section-shop__product-card product">
+                        <div class="product__img  product_light-grey">
+                            <img src="images/product_6.png" alt="Набор для бритья" class="product__img_view img"></div>
+                        <p class="text product__text">Набор для бритья baxter of california</p>
+                        <a href="" class="btn product__btn">3 900 РУБ.</a>
+                    </div>
+                    <!--Пагинация-->
+                    <div class="product__pages pages">
+                        <div class="product__pages-item"><a class="pages__item-a text" href="#">1</a></div>
+                        <div class="product__pages-item"><a class="pages__item-a pages__item_active text" href="#">2</a></div>
+                        <div class="product__pages-item"><a class="pages__item-a text" href="#">3</a></div>
+                        <div class="product__pages-item"><a class="pages__item-a text" href="#">4</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Подвал-->
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="footer__info">
+                    <!--Контакты в подвале-->
+                    <p class="footer__text footer__info_text text">
+                        Barbershop «borodinski»
+                        <br> Адрес: г. Москва, ул. Собаки павлова, д. 13
+                        <br> Телефон: +7 (495) 666-02-666
+                    </p>
+                    <div class="footer__contact contact">
+                        <!--Соцсети в подвале-->
+                        <p class="footer__text contact__text text">Давайте дружить!</p>
+                        <div class="contact_icons">
+                            <a href="#" class="contact__icon contact__icon_vk"></a>
+                            <a href="#" class="contact__icon contact__icon_fb"></a>
+                            <a href="#" class="contact__icon contact__icon_inst"></a>
+                        </div>
+                    </div>
+                    <div class="footer__copy copy">
+                        <!--Копирайт в подвале-->
+                        <p class="text copy__text footer__text">Дизайн сайта:</p>
+                        <a href="" class="btn btn_footer-view">GLUKHANKO.RU</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+<!-- Подключаем скрипты -->
+<script src="https://yastatic.net/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/min__menu.js"></script>
+
+</html>

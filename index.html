@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <script src="js/jquery.js"></script> -->
+    <title>Barbershop Borodinski</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Описание">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Стили -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style.min.css">
+</head>
+
+<body>
+    <!--Шапка сайта-->
+    <header class="header header_view">
+        <!--Меню-->
+        <div class="top top_view">
+            <!--Для меню под мобильные устройства-->
+            <a href="#" class="minmenu text">Меню</a>
+            <!--Меню-->
+            <ul class="menu top__menu">
+                <li class="menu__item"><a class="menu__item-a menu__item-a_active" href="#">Главная</a></li>
+                <li class="menu__item"><a class="menu__item-a" href="#">Информация</a></li>
+                <li class="menu__item"><a class="menu__item-a" href="#">Новости</a></li>
+                <li class="menu__item"><a class="menu__item-a" href="price.html">Прайс-лист</a></li>
+                <li class="menu__item"><a class="menu__item-a" href="shop.html">Магазин</a></li>
+                <li class="menu__item"><a class="menu__item-a" href="#">Контакты</a></li>
+            </ul>
+            <!--Поле входа-->
+            <ul class="log-in log-in_view">
+                <li class="log-in__img"><img class="log-in__img_view" src="images/log-in.png" alt="Вход"></li>
+                <li class="log-in__item"><a class="log-in__item-a" href="#">Вход</a></li>
+            </ul>
+        </div>
+        <!--Новости шапки с логотипом-->
+        <div class="header__news header__news_view">
+            <img src="images/header__logo.png" alt="Логотип" class="logo header__logo">
+            <div class="wrapper">
+                <div class="header__article">
+                    <div class="article">
+                        <!--Блок новостей в шапке-->
+                        <h1 class="title article__title">Быстро</h1>
+                        <img src="images/header-view.png" alt="" class="img article__img">
+                        <p class="text article__text">Мы делаем свою работу быстро! <span class="article__text-next">Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки!</span></p>
+                    </div>
+                    <div class="article">
+                        <h1 class="title article__title">Круто</h1>
+                        <img src="images/header-view.png" alt="" class="img article__img">
+                        <p class="text article__text"><span class="article__text-next">Забудьте, как вы стриглись раньше.</span> Мы сделаем из вас звезду футбола или кино! <span class="article__text-next">Во всяком случае внешне.</span>
+                        </p>
+                    </div>
+                    <div class="article">
+                        <h1 class="title article__title">Дорого</h1>
+                        <img src="images/header-view.png" alt="" class="img article__img">
+                        <p class="text article__text">Наши мастера — профессионалы своего дела<span class="article__text-next"> и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Основной контент главной страницы-->
+    <section class="index-bg">
+        <div class="index-bg_view">
+            <!--Заготовки для блоков контента главной страницы-->
+            <div class="white-bg white-bg_news-photo">
+                <!--Блок новости-фото-->
+                <div class="info-block">
+                    <!--Блок информации на главной странице-->
+                    <div class="info-block__left">
+                        <h1 class="info__title title">Новости</h1>
+                        <p class="text info__text">
+                            Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки
+                            <br> <span class="info__text-date">25 сентября</span>
+                        </p>
+                        <p class="text info__text">
+                            В нашей команде пополнение, борис «бритва» стригунец, обладетель множетсва титулов и наград пополнил наши стройные ряды
+                            <br> <span class="info__text-date">19 сентября</span>
+                        </p>
+                        <a href="#" class="btn btn_news-view">Все новости</a>
+                    </div>
+                </div>
+                <div class="info-block">
+                    <div class="info-block__right">
+                        <h1 class="info__title title">Фотогалерея</h1>
+                        <img src="images/Layer-21.png" alt="фото для фотогалереи" class="img info__img">
+                        <div class="btn-block">
+                            <a href="#" class="btn btn_block-view">Назад</a>
+                            <a href="#" class="btn btn_block-view">Вперед</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="white-bg white-bg_contacts">
+                <!--Блок контакты-->
+                <div class="info-block">
+                    <div class="info-block__left">
+                        <h1 class="info__title title">Контактная информация</h1>
+                        <p class="text info__text">
+                            Barbershop «borodinski»
+                            <br>Адрес: г. Москва, ул. Собаки павлова, д. 13
+                            <br>Телефон: +7 (495) 666-02-666
+                        </p>
+                        <p class="text info__text">
+                            Время работы:
+                            <br> Пн — пт: с 10:00 до 22:00
+                            <br> Сб — вс: с 10:00 до 19:00
+                        </p>
+                        <div class="btn-block">
+                            <!--Блок с 2 кнопками-->
+                            <a href="#" class="btn btn_block-view">Как проехать</a>
+                            <a href="#" class="btn btn_block-view">Обратная связь</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-block">
+                    <div class="info-block__right">
+                        <h1 class="info__title title">Записаться</h1>
+                        <p class="text info__text">Укажите желаемую дату и время и мы свяжемся
+                            <br> с вами для подтверждения брони</p>
+                        <form action="#" class="form form_view">
+                            <input class="form__element" onfocus="this.value='';" type="text" value="Дата">
+                            <input class="form__element" onfocus="this.value='';" type="text" value="Время">
+                            <input class="form__element" onfocus="this.value='';" type="text" value="Ваше имя">
+                            <input class="form__element" onfocus="this.value='';" type="phone" value="Телефон">
+                        </form>
+                        <a href="#" class="btn btn_note-view">Все новости</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Подвал-->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__info">
+                <!--Контакты в подвале-->
+                <p class="footer__text footer__info_text text">
+                    Barbershop «borodinski»
+                    <br> Адрес: г. Москва, ул. Собаки павлова, д. 13
+                    <br> Телефон: +7 (495) 666-02-666
+                </p>
+                <div class="footer__contact contact">
+                    <!--Соцсети в подвале-->
+                    <p class="footer__text contact__text text">Давайте дружить!</p>
+                    <div class="contact_icons">
+                        <a href="#" class="contact__icon contact__icon_vk"></a>
+                        <a href="#" class="contact__icon contact__icon_fb"></a>
+                        <a href="#" class="contact__icon contact__icon_inst"></a>
+                    </div>
+                </div>
+                <div class="footer__copy copy">
+                    <!--Копирайт в подвале-->
+                    <p class="text copy__text footer__text">Дизайн сайта:</p>
+                    <a href="" class="btn btn_footer-view">GLUKHANKO.RU</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- Подключаем скрипты -->
+<script src="https://yastatic.net/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/min__menu.js"></script>
+
+</html>

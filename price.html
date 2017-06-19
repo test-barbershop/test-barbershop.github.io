@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Barbershop Borodinski</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Описание">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Стили -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style.min.css">
+</head>
+
+<body>
+    <!--Шапка сайта-->
+    <header class="header header_view">
+        <div class="top top_view ">
+            <!--Для меню под мобильные устройства-->
+            <a href="#" class="minmenu text">Меню</a>
+            <!--Меню-->
+            <ul class="menu top__menu">
+                <li class="menu__item"><a class="menu__item-a" href="index.html">Главная</a></li>
+                <li class="menu__item"><a class="menu__item-a" href="#">Информация</a></li>
+                <li class="menu__item"><a class="menu__item-a" href="#">Новости</a></li>
+                <li class="menu__item"><a class="menu__item-a menu__item-a_active" href="#">Прайс-лист</a></li>
+                <li class="menu__item"><a class="menu__item-a" href="shop.html">Магазин</a></li>
+                <li class="menu__item"><a class="menu__item-a" href="#">Контакты</a></li>
+            </ul>
+            <!--Поле входа-->
+            <ul class="log-in log-in_view">
+                <li class="log-in__img"><img class="log-in__img_view" src="images/log-in.png" alt="Вход"></li>
+                <li class="log-in__item"><a class="log-in__item-a" href="#">Вход</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--Основной блок страницы с ценами-->
+    <section class="section-price">
+        <div class="wrapper">
+            <h1 class="title section-price__title">Barbershop borodinski — прайс-лист</h1>
+            <!--Навигация-->
+            <ul class="breadcrumbs section-price__nav">
+                <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__item_a breadcrumbs__item_a-first text">Главная</a></li>
+                <li class="breadcrumbs__item">
+                    <p class="breadcrumbs__item_a text">Прайс-лист</p>
+                </li>
+            </ul>
+            <h1 class="title section-price__title-main">Истинно мужская классика</h1>
+            <div class="section-price__block">
+                <div class="section-price__products">
+                    <!--Блок используемые средства-->
+                    <h1 class="section-price__block_title title">Мы используем только лучшие средства:</h1>
+                    <ul class="section-price__products_list product-list">
+                        <li class="product-list__item text">Baxter of California</li>
+                        <li class="product-list__item text">Mr Natty</li>
+                        <li class="product-list__item text">Suavecito</li>
+                        <li class="product-list__item text">Malin+Goetz</li>
+                    </ul>
+                </div>
+                <!--Блок с разценками-->
+                <div class="section-price__price">
+                    <h1 class="section-price__block_title title">Цены на услуги наших мастеров:</h1>
+                    <table class="table-price table-price_view">
+                        <tr class="table-price_row">
+                            <td class="table-price_item-col1 text">Стрижка</td>
+                            <td class="table-price_item-col2 text">1500 р.</td>
+                        </tr>
+                        <tr class="table-price_row">
+                            <td class="table-price_item-col1 text">Стрижка бороды</td>
+                            <td class="table-price_item-col2 text">500 р.</td>
+                        </tr>
+                        <tr class="table-price_row">
+                            <td class="table-price_item-col1 text">Накрутка усов</td>
+                            <td class="table-price_item-col2 text">350 р.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--Информационный блок на странице с прайсом
+-->
+            <h1 class="section-price__comments-title title">Несколько слов о нас:</h1>
+            <div class="section-price___comments">
+                <p class="text section-price__comments-text">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+                <p class="text section-price__price-text">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+            </div>
+        </div>
+    </section>
+    <!--Подвал-->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__info">
+                <!--Контакты в подвале-->
+                <p class="footer__text footer__info_text text">
+                    Barbershop «borodinski»
+                    <br> Адрес: г. Москва, ул. Собаки павлова, д. 13
+                    <br> Телефон: +7 (495) 666-02-666
+                </p>
+                <div class="footer__contact contact">
+                    <!--Соцсети в подвале-->
+                    <p class="footer__text contact__text text">Давайте дружить!</p>
+                    <div class="contact_icons">
+                        <a href="#" class="contact__icon contact__icon_vk"></a>
+                        <a href="#" class="contact__icon contact__icon_fb"></a>
+                        <a href="#" class="contact__icon contact__icon_inst"></a>
+                    </div>
+                </div>
+                <div class="footer__copy copy">
+                    <!--Копирайт в подвале-->
+                    <p class="text copy__text footer__text">Дизайн сайта:</p>
+                    <a href="" class="btn btn_footer-view">GLUKHANKO.RU</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- Подключаем скрипты -->
+<script src="https://yastatic.net/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/min__menu.js"></script>
+
+</html>
